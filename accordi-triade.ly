@@ -1,9 +1,70 @@
-% -----------------------------------------------------------------------------------------------------------------------
-% -----------------------------------------------------------------------------------------------------------------------
-%                                           ARPEGGGI ESTESI MAGGIORI - 2 OTTAVE
-% -----------------------------------------------------------------------------------------------------------------------
-% -----------------------------------------------------------------------------------------------------------------------
-accordiArpeggiEstesiMaggioriXIIToni = {
+% ===========================================================================================================
+% accordi-triade.ly
+%                     _    _      _ _   _               _         
+%  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
+% / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
+% \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
+%                                  Articolazione, Arpeggi, Accordi
+%
+% Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+% 
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+% 
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+% ===========================================================================================================
+
+
+accordiMaggioriXIIToni = {
+    \time 4/4
+
+	\key c \major	<c e g c>4
+	\key cis \major	<cis eis gis cis>4
+	\key d \major	<d fis a d>4
+	\key ees \major	<ees g bes ees>4
+
+	\key e \major	<e gis b e>4
+	\key f \major	<f a c f>4
+	\key fis \major	<fis ais cis fis>4
+	\key g \major	<g b d g>4
+
+	\key aes \major	<aes c ees aes>4
+	\key a \major	<a cis e a>4
+	\key bes \major	<bes d f bes>4
+	\key b \major	<b dis fis b>4
+
+	\key c \major	<c e g c>4
+	\key b \major	<b dis fis b>4
+	\key bes \major	<bes d f bes>4
+	\key a \major	<a cis e a>4
+
+	\key aes \major	<aes c ees aes>4
+	\key g \major	<g b d g>4
+	\key fis \major	<fis ais cis fis>4
+	\key f \major	<f a c f>4
+
+	\key e \major	<e gis b e>4
+	\key ees \major	<ees g bes ees>4
+	\key cis \major	<cis eis gis cis>4
+	\key c \major	<c e g c>4
+
+    \bar "|."
+}
+
+accordiArpeggiMaggioriXIIToni = {
     \time 4/4
 	\set fontSize = #-1
 
