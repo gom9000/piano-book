@@ -36,14 +36,14 @@
 % ===========================================================================================================
 % ------------------------------------------  I N C L U D E S  ----------------------------------------------
 % ===========================================================================================================
-\include "varianti-ritmiche-terzine.ly"
-\include "varianti-ritmiche-quartine.ly"
-\include "varianti-ritmiche-sestine.ly"
+\include "fragments/varianti-ritmiche-terzine.ly"
+\include "fragments/varianti-ritmiche-quartine.ly"
+\include "fragments/varianti-ritmiche-sestine.ly"
 
-\include "articolazione-terzine.ly"
-\include "articolazione-quartine.ly"
-\include "articolazione-sestine.ly"
-\include "articolazione-12-toni.ly"
+\include "fragments/articolazione-terzine.ly"
+\include "fragments/articolazione-quartine.ly"
+\include "fragments/articolazione-sestine.ly"
+\include "fragments/articolazione-12-toni.ly"
 
 
 % ===========================================================================================================

@@ -1,10 +1,9 @@
 % ===========================================================================================================
-% articolazione-terzine.ly
+% articolazione-sestine.ly
 %                     _    _      _ _   _               _         
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                                  Articolazione, Arpeggi, Accordi
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -28,26 +27,45 @@
 % ===========================================================================================================
 
 
-articolazioneTerzineUpper = \relative c'' {
+articolazioneSestineUpper = \relative c' {
     \time 2/4
-    \times 2/3 { c16-2-1[ e-4-3 d-3-2 ] } \override TupletNumber #'transparent = ##t 
-                  \times 2/3 { f-5-4[ c-2-1 e-4-3 ] } \times 2/3 { d[ f c ] } \times 2/3 { e[ d f ] }
-    \times 2/3 {   c[ d f ] } \times 2/3 { e[ c d ] } \times 2/3 { f[ e c ] } \times 2/3 { d[ f e ] }
-    \times 2/3 {   c[ e f ] } \times 2/3 { d[ c e ] } \times 2/3 { f[ d c ] } \times 2/3 { e[ f d ] }
-    \times 2/3 {   f[ e d ] } \times 2/3 { c[ f e ] } \times 2/3 { d[ c f ] } \times 2/3 { e[ d c ] }
-    \times 2/3 {   e[ c f ] } \times 2/3 { d[ e c ] } \times 2/3 { f[ d e ] } \times 2/3 { c[ f d ] }
-    \times 2/3 {   c[ d e ] } \times 2/3 { f[ c d ] } \times 2/3 { e[ f c ] } \times 2/3 { d[ e f ] }
+	
+    \override TupletBracket.bracket-visibility = ##f
+    \times 4/6 { c16-1[ e-3 d-2 f-4 e-3 g-5] }  \override TupletNumber #'transparent = ##t
+	\times 4/6 { c,[ e d f e g] }
+    \times 4/6 { d-1[ f e g f a ] }
+	\times 4/6 { d,[ f e g f a ] }
+    \times 4/6 { e[ g f a g b ] }
+	\times 4/6 { e,[ g f a g b ] }
+    \times 4/6 { f[ a g  b a c ] }
+	\times 4/6 { f,[ a g b a c ] }
+    \times 4/6 { g[ b a c b d ] }
+	\times 4/6 { g,[ b a c b d ] }
+    \times 4/6 { a[ c b d c e ] }
+	\times 4/6 { a,[ c b d c e ] }
+	\times 4/6 { b[ d c e d f ] }
+	\times 4/6 { b,[ d c e d f ] }
+	c2
     \bar "|."
 }
-articolazioneTerzineLower = \relative c {
+articolazioneSestineLower = \relative c {
     \time 2/4
     \override TupletNumber #'transparent = ##t
-    \times 2/3 { c16-2-1[ a-4-3 b-3-2 ] }
-                  \times 2/3 { g-5-4[ c-2-1 a-4-3 ] } \times 2/3 { b[ g c ] } \times 2/3 { a[ b g ] }
-    \times 2/3 {   c[ b g ] } \times 2/3 { a[ c b ] } \times 2/3 { g[ a c ] } \times 2/3 { b[ g a ] }
-    \times 2/3 {   c[ a g ] } \times 2/3 { b[ c a ] } \times 2/3 { g[ b c ] } \times 2/3 { a[ g b ] }
-    \times 2/3 {   g[ a b ] } \times 2/3 { c[ g a ] } \times 2/3 { b[ c g ] } \times 2/3 { a[ b c ] }
-    \times 2/3 {   a[ c g ] } \times 2/3 { b[ a c ] } \times 2/3 { g[ b a ] } \times 2/3 { c[ g b ] }
-    \times 2/3 {   c[ b a ] } \times 2/3 { g[ c b ] } \times 2/3 { a[ g c ] } \times 2/3 { b[ a g ] }
+    \override TupletBracket.bracket-visibility = ##f
+    \times 4/6 { c16-1[ a-3 b-2 g-4 a-3 f-5 ] }
+	\times 4/6 { c'[ a b g a f] }
+    \times 4/6 { b-1[ g a f g e ] }
+	\times 4/6 { b'[ g a f g e ] }
+    \times 4/6 { a[ f g e f d ] }
+	\times 4/6 { a'[ f g e f d ] }
+    \times 4/6 { g[ e f d e c ] }
+	\times 4/6 { g'[ e f d e c ] }
+    \times 4/6 { f[ d e c d b ] }
+	\times 4/6 { f'[ d e c d b ] }
+    \times 4/6 { e[ c d b c a ] }
+	\times 4/6 { e'[ c d b c a ] }
+	\times 4/6 { d[ b c a b g ] }
+	\times 4/6 { d'[ b c a b g ] }
+	c2
     \bar "|."
 }

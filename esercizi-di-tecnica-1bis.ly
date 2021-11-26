@@ -1,10 +1,10 @@
 % ===========================================================================================================
-% esercizi-di-tecnica-articolazione-2.ly
+% esercizi-di-tecnica-1bis.ly
 %                     _    _      _ _   _               _         
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                                                  Articolazione 2
+%                                                Articolazione bis
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -36,7 +36,7 @@
 % ===========================================================================================================
 % ------------------------------------------  I N C L U D E S  ----------------------------------------------
 % ===========================================================================================================
-\include "articolazione-12-toni.ly"
+\include "fragments/articolazione-12-toni.ly"
 
 
 % ===========================================================================================================
@@ -66,7 +66,7 @@
     \markup { \vspace #30 }
     \markup \fontsize #10 \bold { "  Esercizi di Tecnica" }
     \markup { \vspace #1 }
-    \markup \fontsize #4 \bold  { "     Articolazione 2" }
+    \markup \fontsize #4 \bold  { "     Articolazione 'bis'" }
 }
 
 
@@ -81,7 +81,7 @@
     \score {
         \new PianoStaff \with { midiInstrument = #"acoustic grand" }
         <<
-            \set PianoStaff.instrumentName = \markup { "1.5" }
+            \set PianoStaff.instrumentName = \markup { "5" }
             \new Staff = "treble" << \clef violin \articolazioneXIIToniUpper >>
             \new Staff = "bass" << \clef bass \articolazioneXIIToniLower >>
         >>

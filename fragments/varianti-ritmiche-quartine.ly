@@ -1,10 +1,9 @@
 % ===========================================================================================================
-% varianti-ritmiche-terzine.ly
+% varianti-ritmiche-quartine.ly
 %                     _    _      _ _   _               _         
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                           Articolazioni, Arpeggi, Accordi, Terze
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -28,58 +27,41 @@
 % ===========================================================================================================
 
 
-variantiRitmicheSestine = \relative c' {
+variantiRitmicheQuartine = \relative c' {
     \cadenzaOn
     \stopStaff
     \skip 1
     \startStaff
-        c8[^\markup { \raise #2 { varianti ritmiche sestine: }} c16 c8 c16 c8 c16]
+        c8[^\markup { \raise #2 { varianti ritmiche quartine: }} c16 c16 c16]
     \stopStaff
     \skip 1
     \startStaff
-        c16[ c8 c16 c8 c16 c8]
+        c16[ c8 c16 c16]
     \stopStaff
     \skip 1
     \startStaff
-        c8[^\markup { \raise #0  {..terzine...}} c16 c16] c8[ c16 c16]
+        c16[ c16 c8 c16]
     \stopStaff
     \skip 1
     \startStaff
-        c8[ c8 c16 c16 c16 c16]
+        c16[ c16 c16 c8]
     \stopStaff
     \skip 1
     \startStaff
-        c16[ c16 c16 c16 c8 c8]
-    \stopStaff
-    \skip 1
-	\cadenzaOff
-
-%	\break
-
-	\cadenzaOn
-    \startStaff
-        c8[ c16 c16 c16 c16 c16]
+        c8[ c8 c16 c16]
     \stopStaff
     \skip 1
     \startStaff
-        c16[ c8 c16 c16 c16 c16]
+        c16[ c16 c8 c8]
     \stopStaff
     \skip 1
     \startStaff
-        c16[ c16 c8 c16 c16 c16]
+        c8[ c16 c16 c8]
     \stopStaff
     \skip 1
     \startStaff
-        c16[ c16 c16 c8 c16 c16]
+        c16[ c8 c8 c16]
     \stopStaff
     \skip 1
-    \startStaff
-        c16[ c16 c16 c16 c8 c16]
-    \stopStaff
-    \skip 1
-    \startStaff
-        c16[ c16 c16 c16 c16 c8]
-    \stopStaff
-	\skip 1
     \cadenzaOff
 }

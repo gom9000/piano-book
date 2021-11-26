@@ -1,10 +1,10 @@
 % ===========================================================================================================
-% esercizi-di-tecnica-articolazione-1.ly
+% esercizi-di-tecnica-1.ly
 %                     _    _      _ _   _               _         
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                                                  Articolazione 1
+%                                                    Articolazione
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -36,13 +36,13 @@
 % ===========================================================================================================
 % ------------------------------------------  I N C L U D E S  ----------------------------------------------
 % ===========================================================================================================
-\include "varianti-ritmiche-terzine.ly"
-\include "varianti-ritmiche-quartine.ly"
-\include "varianti-ritmiche-sestine.ly"
+\include "fragments/varianti-ritmiche-terzine.ly"
+\include "fragments/varianti-ritmiche-quartine.ly"
+\include "fragments/varianti-ritmiche-sestine.ly"
 
-\include "articolazione-terzine.ly"
-\include "articolazione-quartine.ly"
-\include "articolazione-sestine.ly"
+\include "fragments/articolazione-terzine.ly"
+\include "fragments/articolazione-quartine.ly"
+\include "fragments/articolazione-sestine.ly"
 
 
 % ===========================================================================================================
@@ -72,7 +72,7 @@
     \markup { \vspace #30 }
     \markup \fontsize #10 \bold { "  Esercizi di Tecnica" }
     \markup { \vspace #1 }
-    \markup \fontsize #4 \bold  { "     Articolazione 1" }
+    \markup \fontsize #4 \bold  { "     Articolazione" }
 }
 
 
