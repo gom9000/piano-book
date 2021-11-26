@@ -99,6 +99,6 @@ articolazioneXIIToniLower = \relative c' {
 	\bar "||"
     \break
 	\tuplet 9/4 { gis[ fis e fis gis fis e fis gis] }
-	\tuplet 9/4 { fis[ e dis e fis e dis e fis] ^\markup { \raise #2 {  "   continua fino al DO successivo" }} }
+	\tuplet 9/4 { fis[ e dis e fis e dis e fis] ^\markup { \raise #2 {  "   ... continua fino al DO successivo..." }} }
 	\skip 2
 }
