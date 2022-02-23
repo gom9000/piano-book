@@ -4,7 +4,6 @@
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                                                    Articolazione
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -58,7 +57,7 @@
     bottom-margin = 10
     top-margin = 10
 %    markup-system-spacing #'basic-distance = #8
-    system-system-spacing #'basic-distance = #15
+%    system-system-spacing #'basic-distance = #15
     ragged-bottom = ##t
     ragged-last-bottom = ##t
     print-all-headers = ##t
@@ -69,10 +68,12 @@
 % Copertina
 % -------------------------------------------------------------------------------------------------------------------
 \bookpart {
-    \markup { \vspace #30 }
+    \markup { \vspace #20 }
     \markup \fontsize #10 \bold { "  Esercizi di Tecnica" }
+    \markup { \vspace #2 }
+    \markup \fontsize #4   { "     Articolazione delle 5 dita su terzine, quartine e sestine" }
     \markup { \vspace #1 }
-    \markup \fontsize #4 \bold  { "     Articolazione" }
+    \markup \fontsize #4   { "     e relative varianti ritmiche" }
 }
 
 
@@ -92,7 +93,7 @@
             firstClef = ##f
         } << \variantiRitmicheTerzine >>
         \header {
-            title    = "ARTICOLAZIONE"
+            title    = ##f
             subtitle = ##f
             piece    =  \markup { \column { "Articolazione delle 5 dita su terzine e relative varianti ritmiche" \null } }
         }
