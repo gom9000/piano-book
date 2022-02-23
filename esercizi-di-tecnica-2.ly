@@ -1,10 +1,9 @@
 % ===========================================================================================================
-% esercizi-di-tecnica-1bis.ly
+% esercizi-di-tecnica-2.ly
 %                     _    _      _ _   _               _         
 %  ___ ___ ___ _ _ __(_)__(_)  __| (_) | |_ ___ __ _ _ (_)__ __ _ 
 % / -_|_-</ -_) '_/ _| |_ / | / _` | | |  _/ -_) _| ' \| / _/ _` |
 % \___/__/\___|_| \__|_/__|_| \__,_|_|  \__\___\__|_||_|_\__\__,_|
-%                                                Articolazione bis
 %
 % Copyright (c) 2020 Alessandro Fraschetti (mail: gos95@gommagomma.net)
 %
@@ -37,6 +36,7 @@
 % ------------------------------------------  I N C L U D E S  ----------------------------------------------
 % ===========================================================================================================
 \include "fragments/articolazione-12-toni.ly"
+\include "fragments/arpeggi-diminuiti.ly"
 
 
 % ===========================================================================================================
@@ -52,7 +52,7 @@
     bottom-margin = 10
     top-margin = 10
 %    markup-system-spacing #'basic-distance = #8
-    system-system-spacing #'basic-distance = #15
+%    system-system-spacing #'basic-distance = #15
     ragged-bottom = ##t
     ragged-last-bottom = ##t
     print-all-headers = ##t
@@ -63,10 +63,10 @@
 % Copertina
 % -------------------------------------------------------------------------------------------------------------------
 \bookpart {
-    \markup { \vspace #30 }
+    \markup { \vspace #20 }
     \markup \fontsize #10 \bold { "  Esercizi di Tecnica" }
-    \markup { \vspace #1 }
-    \markup \fontsize #4 \bold  { "     Articolazione 'bis'" }
+    \markup { \vspace #2 }
+    \markup \fontsize #4   { "     Articolazione e Arpeggi diminuiti in tutti i toni" }
 }
 
 
@@ -81,12 +81,12 @@
     \score {
         \new PianoStaff \with { midiInstrument = #"acoustic grand" }
         <<
-            \set PianoStaff.instrumentName = \markup { "5" }
+            \set PianoStaff.instrumentName = \markup { "1" }
             \new Staff = "treble" << \clef violin \articolazioneXIIToniUpper >>
             \new Staff = "bass" << \clef bass \articolazioneXIIToniLower >>
         >>
         \header {
-            title    = ##f
+            title    = "ARTICOLAZIONE"
             subtitle = ##f
 %           opus     = \markup { \bold \smaller { (\note #"4"#1 = 60) } }
             piece    = \markup { \column { "Articolazione delle 5 dita in tutte le tonalità" \null } }
@@ -96,3 +96,29 @@
     }
 }
 % -------------------------------------------------------------------------------------------------------------------
+
+
+% -------------------------------------------------------------------------------------------------------------------
+% ARPEGGGI
+% -------------------------------------------------------------------------------------------------------------------
+\bookpart {
+%    \paper { system-count = #5 }
+    % -------------------------------------------------------------------------------------------------------------------
+    %   ARPEGGGI - DIMINUITI PER MOTO RETTO IN TUTTI I TONI
+    % -------------------------------------------------------------------------------------------------------------------
+    \score {
+        \new Staff = "treble" \with { midiInstrument = #"acoustic grand" }
+         <<
+            \set Staff.instrumentName = \markup { "1" }
+            \clef violin \relative c' \arpeggiDiminuitiMotoRettoXIIToni
+        >>
+        \header {
+            title    = "ARPEGGI"
+            subtitle = ##f
+%           opus     = \markup { \bold \smaller { (\note #"4"#1 = 120) } }
+            piece    = \markup { \column { "Arpeggi diminuiti per moto parallelo in tutte le tonalità" \null } }
+        }
+        \layout { \context { \override VerticalAlignment #'forced-distance = #4 } }
+        \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
+    }
+}

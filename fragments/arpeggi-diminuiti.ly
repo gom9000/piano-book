@@ -28,36 +28,28 @@
 % ===========================================================================================================
 
 
-arpeggiDiminuitiOttavaXIIToni = {
-    \time 2/4
-	\key c \major		c,16^\markup { \small {  "la sinistra 2 ottave sotto" }}
-						  e g b 				c b g e
-						c e g bes				c bes g e
-						c ees g bes				c bes g ees
-						c ees ges beses			c beses ges ees
-						c4 						r4
+arpeggiDiminuitiMotoRettoXIIToni = {
+    \time 4/4
+	\key c \major
+    c,16 ^\markup { "la sinistra un'ottava sotto" }
+       e g b          c e g b             c e g b             c e g b
+    c b g e             c b g e             c b g e             c b g e
+    \break
+    c e g bes           c e g bes           c e g bes           c e g bes
+    c bes g e           c bes g e           c bes g e           c bes g e
+    \break
+    c ees g bes         c ees g bes         c ees g bes         c ees g bes
+    bes g ees c         bes g ees c         bes g ees c         bes g ees c
+    \break
+    c ees ges bes       c ees ges bes       c ees ges bes       c ees ges bes
+    bes ges ees c       bes ges ees c       bes ges ees c       bes ges ees c
+    \break
+    c ees ges beses     c ees ges beses     c ees ges beses     c ees ges beses
+    beses ges ees c     beses ges ees c     beses ges ees c     beses ges ees c
 	\bar "||"
-	
-	\key cis \major		cis[ eis gis cis]		cis[ gis eis cis]
-	\bar "||"
-	\key d \major		d[ fis a d]				d[ a fis d]
-	\bar "||"
-	\key ees \major		ees[ g bes ees]			ees [ bes g ees]
-	\bar "||"
-	\key e \major		e[ gis b e]				e[ b gis e]
-	\bar "||"
-	\key f \major		f[ a c f]				f[ c a f]
-	\bar "||"
-	\key fis \major		fis[ ais cis fis]		fis[ cis ais fis]
-	\bar "||"
-	\key g \major		g[ b d g]				g[ d b g]
-	\bar "||"
-	\key aes \major		aes[ c ees aes]			aes[ ees c aes]
-	\bar "||"
-	\key a \major		a[ cis e a]				a[ e cis a]
-	\bar "||"
-	\key bes \major		bes[ d f bes]			bes[ f d bes]
-	\bar "||"
-	\key b \major		b[ dis fis b]			b[ fis dis b]
-    \bar "|."
+    \break
+	\key cis \major
+    cis eis gis bis     cis eis gis bis     cis eis gis bis     cis eis gis bis
+    bis gis eis cis     bis gis eis cis     bis gis eis cis     bis gis eis cis
+	cis eis gis b ^\markup { \raise #2 {  "   ... continua fino al DO successivo..." }}
 }
