@@ -1,5 +1,0 @@
-- diteggiatura arpeggi maggiori nell'ottava;
-- note e diteggiatura arpeggi minori nell'ottava;
-
-- definizione di quali esercizi di arpeggi inserire;
-
